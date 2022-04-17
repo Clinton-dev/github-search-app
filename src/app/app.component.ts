@@ -1,4 +1,4 @@
-import { Component,OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { GithubService } from './github-service/github.service';
 import { Subscription } from 'rxjs';
@@ -19,12 +19,11 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    this.getPublicRepositories();
+    this.getPublicRepositories()
   }
 
   constructor(githubService:GithubService) {
     this.githubService = githubService;
-    console.log(this.repositories)
   }
 
   getPublicRepositories() {
@@ -32,6 +31,5 @@ export class AppComponent {
         this.repositories = repos;
       })
      )
-     return this.repositories
   }
 }
