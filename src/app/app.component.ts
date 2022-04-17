@@ -1,9 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { GithubService } from './github-service/github.service';
-import { Subscription } from 'rxjs';
-import { FormControl } from '@angular/forms';
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,30 +6,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  githubService:GithubService;
-  mySubscription: Subscription = new Subscription;
-  repositories:any = [];
-  name = new FormControl();
-
-  ngOnDestroy():void{
-    this.mySubscription.unsubscribe();
-  }
-
   ngOnInit(): void { }
 
-  constructor(githubService:GithubService) {
-    this.githubService = githubService;
-  }
-
-  getPublicRepositories(username:string) {
-    this.mySubscription.add(this.githubService.fetchRepo(username).subscribe((repos:any) => {
-      this.repositories = repos;
-    })
-    )
-  }
-
-  searchRepos() {
-    this.getPublicRepositories(this.name.value)
-    return false
-  }
+  constructor() { }
 }
