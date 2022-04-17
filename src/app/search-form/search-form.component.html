@@ -1,14 +1,24 @@
-<div class="containter-fluid">
-    <form class="row g-3 mt-4" >
-        <div class="col-auto">
-          <label for="username" class="visually-hidden">Enter your github username</label>
-          <input type="text" [formControl]="name" class="form-control" id="username" placeholder="@github username">
-        </div>
-        <div class="col-auto">
-          <button (click)="searchRepos()" class="btn btn-primary mb-3">Search</button>
-        </div>
-      </form>
-      <li *ngFor="let repo of repositories">
-        {{repo.name}}
-    </li>
+<div class="row justify-content-center">
+<div class="col-7  bg-body my-4 rounded shadow-sm">
+  <div class="row justify-content-evenly">
+    <div class="col-6 ">
+      <input type="text" [formControl]="name" class="form-control" id="username" placeholder="@github username">
+    </div>
+    <div class="col-3">
+      <button (click)="searchRepos()" class="btn btn-primary mb-3">Search</button>
+    </div>
+  </div>
 </div>
+</div>
+<!-- <form  >
+    <div class="col-auto">
+      <label for="username" class="visually-hidden">Enter your github username</label>
+      <input type="text" [formControl]="name" class="form-control" id="username" placeholder="@github username">
+    </div>
+    <div class="col-auto">
+      <button (click)="searchRepos()" class="btn btn-primary mb-3">Search</button>
+    </div>
+  </form>
+  <li *ngFor="let repo of repositories">
+    {{repo.name}}
+</li> -->
