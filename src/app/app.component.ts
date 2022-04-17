@@ -27,7 +27,7 @@ export class AppComponent {
   }
 
   getPublicRepositories(username:string) {
-    this.mySubscription.add(this.githubService.fetchRepo('Clinton-dev').subscribe((repos:any) => {
+    this.mySubscription.add(this.githubService.fetchRepo(username).subscribe((repos:any) => {
       this.repositories = repos;
     })
     )
