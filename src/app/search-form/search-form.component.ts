@@ -1,7 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { GithubService } from '../github-service/github.service';
-import { Subscription } from 'rxjs';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -10,37 +7,18 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./search-form.component.css']
 })
 export class SearchFormComponent implements OnInit {
-  githubService:GithubService;
-  repositories:any = [];
 
-  mySubscription: Subscription = new Subscription;
+  @Output() inputValue = new EventEmitter<string>();
   name = new FormControl('',Validators.required);
 
-  ngOnDestroy():void{
-    this.mySubscription.unsubscribe();
+  searchGithub(name:string){
+    this.inputValue.emit(name);
   }
 
-  constructor(githubService:GithubService) {
-    this.githubService = githubService;
-   }
+  constructor() {
+  }
 
   ngOnInit(): void {
-  }
-
-  getPublicRepositories(username:string) {
-    this.mySubscription.add(this.githubService.fetchRepo(username).subscribe((repos:any) => {
-      this.repositories = repos;
-    })
-    )
-  }
-
-  searchRepos() {
-    if(!this.name.value) {
-      alert("please insert username")
-    }
-
-    this.getPublicRepositories(this.name.value)
-    return false
   }
 
 }

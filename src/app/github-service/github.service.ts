@@ -7,7 +7,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GithubService {
 
-
   constructor(private http: HttpClient) {
     // this.repo = new Repository("","","","",new Date(),new Date());
    }
