@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
 import { GithubService } from '../github-service/github.service';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-user',
@@ -9,6 +10,7 @@ import { GithubService } from '../github-service/github.service';
 })
 export class UserComponent implements OnInit {
 
+  name = new FormControl('');
   user:User;
   githubService:GithubService;
   /*
@@ -20,21 +22,21 @@ export class UserComponent implements OnInit {
     this.user = new User("","","",0,0,0,new Date());
   }
   ngOnInit(): void {
-    this.getInfoWithPromise();
   }
 
-  getInfor() {
+  searchGithub(){
+    console.log(this.name.value)
+    this.getInfoWithPromise(this.name.value);
   }
 
-  getInfoWithPromise(){
-    this.githubService.getUserInfor('Clinton-dev').then((data:any) => {
+  async getInfoWithPromise(username:string){
+    await this.githubService.getUserInfor(username).then((data:any) => {
       this.user.name = data.name;
       this.user.avatar_url = data.avatar_url;
       this.user.public_repos = data.public_repos;
       this.user.following = data.following;
       this.user.followers = data.followers;
       this.user.created_at = data.created_at;
-      console.log(data)
     })
 
   }
