@@ -25,7 +25,6 @@ export class UserComponent implements OnInit {
   }
 
   searchGithub(){
-    console.log(this.name.value)
     this.getInfoWithPromise(this.name.value);
   }
 

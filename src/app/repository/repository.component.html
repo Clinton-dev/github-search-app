@@ -1,5 +1,17 @@
 <div class="container">
-    <app-search-form (inputValue)="githubSearch($event)"></app-search-form>
+    <div class="row justify-content-center ">
+        <div class="col-7  bg-body my-4 rounded shadow-sm pt-4">
+          <div class="row justify-content-evenly">
+                  <div class="col-6 ">
+                    <input type="text" [formControl]="name" class="form-control" id="username" placeholder="@github username">
+                  </div>
+                  <div class="col-3">
+                    <button (click)="searchGithub()"type ="submit" class="btn mb-3">Search</button>
+                  </div>
+                </div>
+        </div>
+        </div>
+    <!-- <app-search-form (inputValue)="githubSearch($event)"></app-search-form> -->
     <div class="row justify-content-center">
         <div class="col-8  bg-body my-4 rounded shadow-sm pt-2">
             <h4 class="text-center mb-2">User repositories</h4>
