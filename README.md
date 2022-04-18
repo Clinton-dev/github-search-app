@@ -1,4 +1,40 @@
 # GithubSearch
+### Table of Contents
+* Description
+* Technology Used
+* References
+* Copyright & Licence Info
+* Link to live site
+* Authors Info
+
+### Description
+This is a web application that allows users to enter a GitHub username to see both names and descriptions of that person's public repositories.
+
+The contents of the website are;
+1. User can enter a username and get repository information of the said user.
+2. User can github username and get github userinformation of the username that is searched.
+
+### Technology Used
+The languages and frameworks used to develop the quotes web application are **Angular**, **Bootstrap**, **HTML**, **Javascript** and **CSS**.
+
+
+### References
+
+[how to fix angular httpclient topromise deprecated](https://techoverflow.net/2022/01/17/how-to-fix-angular-httpclient-topromise-deprecated-rxjs/)
+
+### Copyright & Licence Info
+MIT Copyright (c) 2022 Clinton Wambugu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+### Link to Live Site
+
+
+### Author's Information
+[Clinton-dev](https://github.com/Clinton-dev)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 
