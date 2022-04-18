@@ -1,0 +1,13 @@
+nav {
+    background: #041C32;
+}
+
+nav a {
+    color: white;
+}
+
+nav img {
+    width: 2rem;
+    margin-left: 1rem;
+    margin-right: .5rem;
+}
