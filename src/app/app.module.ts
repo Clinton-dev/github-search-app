@@ -10,6 +10,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 import { UserComponent } from './user/user.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RepositoryDetailsComponent } from './repository-details/repository-details.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RepositoryDetailsComponent } from './repository-details/repository-deta
     SearchFormComponent,
     UserComponent,
     NavbarComponent,
-    RepositoryDetailsComponent
+    RepositoryDetailsComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
