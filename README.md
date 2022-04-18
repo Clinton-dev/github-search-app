@@ -12,7 +12,7 @@ This is a web application that allows users to enter a GitHub username to see bo
 
 The contents of the website are;
 1. User can enter a username and get repository information of the said user.
-2. User can github username and get github userinformation of the username that is searched.
+2. User can enter github username and get github userinformation of the username that is searched.
 
 ### Technology Used
 The languages and frameworks used to develop the quotes web application are **Angular**, **Bootstrap**, **HTML**, **Javascript** and **CSS**.
@@ -31,6 +31,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ### Link to Live Site
+[Link to live site](https://clinton-dev.github.io/github-search-app/)
 
 
 ### Author's Information
